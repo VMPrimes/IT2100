@@ -54,6 +54,23 @@ for (a) in "5,6 .. 10".enumerated() {
 // Print  "9"
 // Print  "10"
 
+class greeter {
+    func sayHello(name: String, greeting: String) {
+        print("\(name), \(greeting)")
+    }
+}
+let steve = greeter()
+steve.sayHello(name: "Vickie", greeting: " is mastering, the Swift programming language")
+
+var m:Double = 43.88
+var n:Double = 108.99
+var o:Double = 14.22
+print("The total is")
+    print("$\(m + n + o)")
+
+
+
+
 
 
 
@@ -69,8 +86,30 @@ func getPerimeter(length: Int, width: Int) -> Int {  //10
 print(getPerimeter(length: 7, width: 9))
     
 
+class dog {
+ 
+    var dogBreed: String?
+    var dogName: String?
+    
+    func bark( name: String)  {
+            var bark: [String] = []
+     
+            if let dogBreed = poodle.dogBreed {
+                breed += [dogBreed]
+                poodle.dogBreed = "Poodle"
+            }
+     
+            if let dogName = trent.dogName {
+                name += [dogName]
+                trent.dogName = "Trent";                print("\(name) is barking!")
+                
+            }
+     
+    
 
-
+        }
+     
+    }
 
 
 

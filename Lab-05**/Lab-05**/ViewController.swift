@@ -19,22 +19,14 @@ class ViewController: UIViewController {
         switch appleLink.selectedSegmentIndex {
          case 0:
             appleURLString = "https://en.wikipedia.org/wiki/Apple_Inc."
-        default:
-            appleURLString = "https://en.wikipedia.org/wiki/Apple_Inc.";     view.backgroundColor = .green
-            
-            switch appleLink.selectedSegmentIndex {        case 1:
-            appleURLString = "https://en.wikipedia.org/wiki/IOS."
-        default:
+        view.backgroundColor = .green
+                   case 1:
             appleURLString = "https://en.wikipedia.org/wiki/IOS."
                 view.backgroundColor = .purple
-            }
-            switch appleLink.selectedSegmentIndex {
             case 2:
             appleURLString = "https://en.wikipedia.org/wiki/Xcode Swift."
-        default:
-            appleURLString = "https://en.wikipedia.org/wiki/Apple_Inc.";            view.backgroundColor = .yellow
-            }
-            switch appleLink.selectedSegmentIndex {            case 3:
+                 view.backgroundColor = .yellow
+                        case 3:
             appleURLString = "https://en.wikipedia.org/wiki/Swift (programming language)."
             view.backgroundColor = .red
         default:
@@ -45,20 +37,20 @@ class ViewController: UIViewController {
                 webApple.load(myRequest)
             }
     
-        func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let myURL = URL(string:"https://en.wikipedia.org/wiki/Apple_Inc.")
         let myRequest = URLRequest(url: myURL!)
         webApple.load(myRequest)
     }
-        func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //dispose of any resources that can be recreated.
     }
 }
 
-}
+
 
         
 

@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Lab-05**
+//  Lab008-TableView
 //
-//  Created by Vickie Primes on 2/22/21.
+//  Created by Vickie Primes on 3/14/21.
 //
 
 import UIKit

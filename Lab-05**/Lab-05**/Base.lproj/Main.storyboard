@@ -16,8 +16,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ev-Hq-SR5">
+                                <rect key="frame" x="35" y="155" width="337" height="687"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TPd-ld-bjK">
+                                <rect key="frame" x="34" y="84" width="219" height="27"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="a5d-9e-k9x">
-                                <rect key="frame" x="50" y="120" width="309" height="32"/>
+                                <rect key="frame" x="30" y="114" width="340" height="32"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
@@ -30,29 +45,14 @@
                                     <action selector="changeAppleLink:" destination="BYZ-38-t0r" eventType="valueChanged" id="wAP-0w-rR2"/>
                                 </connections>
                             </segmentedControl>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ev-Hq-SR5">
-                                <rect key="frame" x="59" y="176" width="286" height="692"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TPd-ld-bjK">
-                                <rect key="frame" x="51" y="86" width="210" height="27"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="1Ev-Hq-SR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Iht-sj-aZL"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="1Ev-Hq-SR5" secondAttribute="bottom" constant="-6" id="K4r-UX-oSw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Ev-Hq-SR5" secondAttribute="trailing" constant="69" id="eqr-FM-RT0"/>
-                            <constraint firstItem="1Ev-Hq-SR5" firstAttribute="top" secondItem="a5d-9e-k9x" secondAttribute="bottom" constant="25" id="f2u-Ex-y1u"/>
+                            <constraint firstItem="1Ev-Hq-SR5" firstAttribute="top" secondItem="a5d-9e-k9x" secondAttribute="bottom" constant="10" id="3g5-to-Nyt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1Ev-Hq-SR5" secondAttribute="bottom" constant="20" id="Lar-0r-lJ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Ev-Hq-SR5" secondAttribute="trailing" constant="42" id="rQV-T8-wIE"/>
+                            <constraint firstItem="1Ev-Hq-SR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="sIC-Bd-MYc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184.05797101449278" y="-297.32142857142856"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-2908.2589285714284"/>
         </scene>
     </scenes>
     <resources>

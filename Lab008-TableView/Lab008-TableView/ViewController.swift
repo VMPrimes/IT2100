@@ -20,12 +20,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         
-        addSong(song: "Bad", artist: "Michael Jackson", year: "1987")
-        addSong(song: "Never Too Much", artist: "Luther Vandross", year: "1981")
-        addSong(song: "Cupid Shuffle", artist: "Cupid", year: "2007")
+        addSong("Bad", "Michael Jackson", "1987")
+        addSong("Never Too Much", "Luther Vandross", "1981")
+        addSong("Cupid Shuffle", "Cupid", "2007")
     }
         
-        func addSong(song: String, artist: String, year: String) {
+        func addSong(_ song: String, _ artist: String, _ year: String) {
         self.songs.append(song)
         self.songArtists.append(artist)
         self.songYears.append(year)
@@ -43,11 +43,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.songArtist.text =  self.songArtists[indexPath.item]
         cell.songYear.text = self.songYears[indexPath.item]
     return cell
-         
         
+    }
+        
+        func numberOfSections(in tableview: UITableView) -> Int {
+    3
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
         
     }
            
@@ -55,4 +56,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 }
     
 
-}
+

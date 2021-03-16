@@ -18,16 +18,16 @@ class ViewController: UIViewController {
         var appleURLString = ""
         switch appleLink.selectedSegmentIndex {
          case 0:
-            appleURLString = "https://en.wikipedia.org/wiki/Apple_Inc."
+            appleURLString = "https://en.wikipedia.org/wiki/Apple_Inc"
         view.backgroundColor = .green
                    case 1:
-            appleURLString = "https://en.wikipedia.org/wiki/IOS."
+            appleURLString = "https://en.wikipedia.org/wiki/IOS"
                 view.backgroundColor = .purple
             case 2:
-            appleURLString = "https://en.wikipedia.org/wiki/Xcode Swift."
+            appleURLString = "https://en.wikipedia.org/wiki/Xcode"
                  view.backgroundColor = .yellow
                         case 3:
-            appleURLString = "https://en.wikipedia.org/wiki/Swift (programming language)."
+            appleURLString = "https://en.wikipedia.org/wiki/Swift_programming_language"
             view.backgroundColor = .red
         default:
             appleURLString = "https://en.wikipedia.org/wiki/Apple_Inc."
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let myURL = URL(string:"https://en.wikipedia.org/wiki/Apple_Inc.")
+        let myURL = URL(string:"https://en.wikipedia.org/wiki/Apple_Inc")
         let myRequest = URLRequest(url: myURL!)
         webApple.load(myRequest)
     }

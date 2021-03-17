@@ -42,6 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.song.text = self.songs[indexPath.item]
         cell.songArtist.text =  self.songArtists[indexPath.item]
         cell.songYear.text = self.songYears[indexPath.item]
+        cell.textLabel?.text = String(songs [indexPath.row])
     return cell
         
     }
@@ -51,7 +52,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
         
     }
-           
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
         
 }
     
